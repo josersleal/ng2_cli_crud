@@ -1,3 +1,68 @@
-<h1>
-  {{title}}
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+		<input type="checkbox" id="navbar-toggle-cbox">
+		<div class="navbar-header">
+			<label for="navbar-toggle-cbox" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+				aria- controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </label>
+			<a class="navbar-brand" href="#">
+				<img alt="logo" src="/img/logo.svg" />
+			</a>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar">
+			<ul class="nav navbar-nav">
+				<<li><a class="home" [routerLink]="['']">Home</a></li>
+				<li><a class="about" [routerLink]="['about']">About</a></li>
+				<li><a class="login" [routerLink]="['login']">Login</a></li>
+				<li><a class="add" [routerLink]="['item/edit', 0]">Add New</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<h1 class="header">{{title}}</h1>
+<div class="main-container">
+	<router-outlet></router-outlet>
+</div>
+<!--<h1>
+	{{title}}
 </h1>
+<ngb-alert type="success" [dismissible]="true">
+	<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</ngb-alert>
+<br />
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+	<ngb-panel title="Simple">
+		<template ngbPanelContent>
+			Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+			non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+			put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+			wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+			raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		</template>
+	</ngb-panel>
+	<ngb-panel>
+		<template ngbPanelTitle>
+			<span>&#9733; <b>Fancy</b> title &#9733;</span>
+		</template>
+		<template ngbPanelContent>
+			Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+			non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+			put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+			wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+			raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		</template>
+	</ngb-panel>
+	<ngb-panel title="Disabled" [disabled]="true">
+		<template ngbPanelContent>
+			Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+			non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+			put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+			wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+			raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		</template>
+	</ngb-panel>
+</ngb-accordion>-->

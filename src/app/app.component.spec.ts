@@ -27,7 +27,8 @@ describe('App: Ng2Todo', () => {
   it('should render title in a h1 tag', async(() => {
     let fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
+    let comp = fixture.componentInstance;
     let compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('app works!');
+    expect(compiled.querySelector('h1').textContent).toContain(comp.title);
   }));
 });
